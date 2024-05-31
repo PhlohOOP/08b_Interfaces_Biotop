@@ -28,7 +28,13 @@ public class App {
         output("-----------------");
     }
 
-   
+    private static void pollObj(Bird obj){ // Überladene Methode
+        output(obj.hasFeathers());
+        output(obj.fly());
+        output("-----------------");
+    }
+    
+
     private static void output(String outputStr) {
         System.out.println(outputStr);
     }
